@@ -1,5 +1,9 @@
 package leetcode
 
+import (
+	"github.com/scorpio-su/leetcode/structures"
+)
+
 type TreeNode = structures.TreeNode
 
 func isSameTree1(p *TreeNode, q *TreeNode) bool {
