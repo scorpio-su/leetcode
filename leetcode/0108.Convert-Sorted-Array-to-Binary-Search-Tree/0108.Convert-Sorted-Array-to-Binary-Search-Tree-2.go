@@ -14,7 +14,7 @@ func sortedArrayToBST2(nums []int) *TreeNode {
 	}
 	root := new(TreeNode)
 	root.Val = nums[l/2]
-	root.Left = sortedArrayToBST(nums[:l/2])
-	root.Right = sortedArrayToBST(nums[l/2+1:])
+	root.Left = sortedArrayToBST2(nums[:l/2])
+	root.Right = sortedArrayToBST2(nums[l/2+1:])
 	return root
 }
