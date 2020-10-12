@@ -6,7 +6,7 @@ func isPowerOfTwo2(n int) bool {
 	}
 	i := 1
 	for i < n {
-		n <<= 1
+		i <<= 1
 	}
-	return n == 1
+	return n == i
 }
